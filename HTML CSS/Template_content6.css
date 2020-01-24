@@ -1,0 +1,94 @@
+main.content6 {
+    width: var(--sizeScreen);
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: var(--backgroundfill);
+}
+.content6.--figure {
+    margin: 0px;
+}
+.content6.--figure > img {
+    width: 100%;
+}
+div.cont6Menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: auto 8% auto;
+}
+div.cont6Menu > figure {
+    width: 100%;
+    margin: 0px;
+    margin-right: 20px;
+    overflow: hidden;
+    background-color: silver;
+    color:black !important;
+}
+div.cont6Menu > figure:last-of-type {
+    margin-right: 0px;
+}
+.js-cont6-background {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 70%;
+    width: 100%;
+}
+section.cont6Child {
+    padding: var(--paddingtop) 0;
+}
+section.cont6Child > p {
+    font-size: calc(var(--sizefontParagraph) + 15px);
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+    margin: 0px auto calc(var(--sizefontParagraph) - 15px);
+}
+section.cont6Child > h3 {
+    font-size: calc(var(--sizeFontTitle) + 15px);
+    line-height: 1;
+    color: var(--colorWord);
+    font-weight: bold;
+    margin: 0;
+}
+figure.cont6Dish span {
+    position: relative;
+    bottom: 0px;
+}
+div.cont6Dish-div2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    margin: 20px;
+}
+div.cont6Dish-div2 p {
+    margin: 0px;
+    color:rgba(1, 1, 1, 0.8);
+    margin-bottom: 1.2rem;
+}
+div.cont6Dish-div2 h3 {
+    margin-top: 1.5rem;
+    color: black;
+    text-align: left;
+    line-height: 100%;
+}
+div.cont6Dish-div2 h4 {
+    font-size: var(--sizeFontTitle);
+    font-family: var(--fontSpecial);
+    margin: 0;
+    line-height: 1;
+}
+div.cont6Dish-div2 span {
+    font-size: var(--sizeFontTitle);
+    font-family: var(--fontParagraph);
+    text-align: left;
+    width: max-content;
+    line-height: 1;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    border-bottom: 4px solid var(--colorWord);
+    cursor: pointer;
+}

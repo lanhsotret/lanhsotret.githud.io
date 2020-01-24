@@ -1,0 +1,393 @@
+@import "Template_content6.css";
+@import "Template_footer1.css";
+@import "Template_footer2.css";
+@import "pattern.css";
+
+:root {
+	--fonttitle: "Sedgwick Ave Display";
+	--fontParagraph: "Grenze"; 
+	--sizeScreen: 1100px;
+	--sizeFontTitle: 1.5em;
+	--sizefontParagraph: 1.4em;
+	--backgroundfill: #4e5342;
+	--backgroundColor: #212121;
+	--colorWord: #afc67b;
+	--fontSpecial: "Leckerli One";
+	--paddingtop: 35px;
+	--bg-secondary: #7FD7F5;
+    --bg-primary: #c0ebfa;
+}
+
+* {
+	box-sizing: border-box;
+	}
+body {
+	margin: 0;
+	text-align: center;
+}
+h3 {
+	font-family: "Sedgwick Ave Display";
+	font-size: 1.5em;
+	color: white;
+	margin-bottom: 0;
+}
+p {
+	font-family: "Grenze";
+	font-size: 1.4em;
+	color: whitesmoke;
+	text-align: justify;
+	margin-top: 0.5em;
+}
+
+/* css cho phan header <header class="TopDocument"> */
+
+header.TopDocument {
+	color: #afc67b;
+	font-weight: bold;
+	width: 1100px;
+	margin: auto;
+	position: relative;
+	height: 70vh;
+	}
+	header.TopDocument > img {
+		width: 100%;
+		height: 70vh;
+		object-fit: cover;
+	}
+	main.header {
+		position: absolute;
+		top: 20px;
+		right: 30px;
+		}
+	nav.NavHeader {
+		font-family: "Lakki Reddy";
+		text-transform: uppercase;
+		font-size: 1.6em;
+		display: flex;
+		flex-wrap: nowrap;
+		position: relative;
+		width: 60%;
+		}
+		nav.NavHeader > div {
+			padding: 0 0.5em;
+			}
+		nav.NavHeader > div:first-child {
+			padding-right: 1.2em;
+			}
+	section.ContentHeader {
+		margin-left: 5em;
+		width: max-content;
+		margin-top: 1.1em;
+		font-family: "Lato";
+		text-transform: uppercase;
+		font-size: 2em;
+		height: 45vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		text-align: left;
+		}
+		section.ContentHeader div:last-child {
+			text-align: left;
+			width: 100%;
+			font-size: inherit;
+		}
+		section.ContentHeader input {
+			outline: none;
+			font-size: 0.8em;
+			width: max-content;
+			text-transform: uppercase;
+			color: inherit;
+			padding: 0.1em 0.3em;
+			border: none;
+			background-color: rgba(1, 1, 1, 0.5);
+		}
+		div.logo {
+			width: max-content;
+			text-align: center;
+			font-family: "Leckerli One";
+			text-transform: capitalize;
+			}
+		div.event {
+			width: max-content;
+			font-weight: normal;
+			}
+		div.event span:last-child{
+			font-weight: bold;
+			font-size: 1.8em;
+			}
+		section.ContentHeader span {
+			display: block;
+			}
+
+/* css cho phan article // <main class="content1"> */
+
+main.content1 {
+	display: grid;
+	margin: auto;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 3em;
+	width: 1100px;
+	overflow: hidden;
+	height: 50vh;
+	background-color: #212121;
+	}
+	div.cont1.div2 {
+		position: relative;
+	}
+	div.wrapSvg {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		text-align: left;
+		transform: scale(1.2);
+		transform-origin: left top;
+	}
+	div.cont1.div2 svg {
+		margin-left: -10px;
+		clip-path: url(#theSVGPath);
+		transform: rotate(-45deg);
+		transform-origin: left top;
+	}
+	div.cont1.div1 {
+		position: relative;
+	}
+	div.cont1.div1 > div {
+		position: absolute;
+		height: max-content;
+		left: 10%;
+		top: 50%;
+		transform: translateY(-50%);
+		color: whitesmoke;
+	}
+	div.cont1.div1 h3 {
+		text-align: left;
+		color: #afc67b;
+	}
+
+/* css cho phan <main class="content2"> */
+
+main.content2 {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 3rem;
+	align-content: center;
+	margin: auto;
+	height: 75vh;
+	width: 1100px;
+	padding: 0% 6em;
+	background-color: #4e5342;
+	color: whitesmoke;
+}
+	div.cont2Svg svg {
+		transform: rotate(-10deg);
+		transform-origin: right bottom;
+		margin-left: 5px;
+	}
+	div.cont2Svg {
+		text-align: left;
+		transform-origin: left top;
+		overflow: hidden;
+		
+	}
+	main.content2 h3 {
+		text-align: left;
+	}
+
+/* css cho phan <main class="content3"> */
+
+main.content3 {
+	position: relative;
+	margin: auto;
+	width: 1100px;
+	padding: 4em 6em;
+	}
+	main.content3::after {
+		content: "";
+		position: absolute;
+		top: 0%;
+		left: 0%;
+		right: 0%;
+		bottom: 0%;
+		z-index: -2;
+		background-color: #212121;
+	}
+	main.content3::before {
+		content: "";
+		position: absolute;
+		top: 4em;
+		left: 6em;
+		right: 6em;
+		bottom: 4em;
+		z-index: -1;
+		background-color: #4e5342;
+	}
+	main.content3 > div {
+		margin: 3rem auto;
+	}
+	main.content3 > div p {
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: normal;
+		font-size: 2.2rem;
+		margin: 0 auto;
+	}
+	main.content3 > div h3 {
+		margin: 0 auto;
+	}
+	section.cont3Menu {
+		display: grid;
+		grid-template-rows: repeat(3, 1fr);
+		box-shadow: 0 1px 2px black;
+	}
+	div.cont3Food {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+	}
+	div.cont3Food img {
+		position: absolute;
+		height: 100%;
+		margin-left: -20%;
+		top: 0%;
+		left: 0%;
+	}
+	div.cont3Food > figure, div.WrapFood {
+		position: relative;
+		width: 100%;
+		padding-top: 100%;
+		margin: 0;
+		overflow: hidden;
+	}
+	div.WrapFood > div {
+		position: absolute;
+		overflow: hidden;
+		top: 7%;
+		left: 7%;
+		right: 7%;
+		bottom: 7%;
+	}
+	div.WrapFood h3 {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+/* css cho phan <main class="content4"> */
+main.content4 {
+	margin: auto;
+	width: 1100px;
+	background-color: #4e5342;
+	}
+	main.content4 > div {
+		padding: 7% 0;
+		text-align: center !important;
+	}
+	main.content4 > div h3 {
+		margin-top: 0;
+	}
+	main.content4 > div p, main.content4 > div div {
+		text-align: center;
+	}
+	main.content4 > figure {
+		width: 100%;
+		height: 20rem;
+		margin: 0;
+		overflow: hidden;
+	}
+	main.content4 > figure img {
+		width: 100%;
+		margin-top: -15%;
+	}
+	section.cont4Child {
+		padding: 2.5rem;
+	}
+	section.cont4Child > h3 {
+		font-size: 2.1rem;
+		margin: 0;
+	}
+	section.cont4Child > p {
+		font-size: 3rem;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0;
+	}
+	div.cont4Dish {
+		margin: 0 5%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 10%;
+	}
+	div.cont4Dish img {
+		width: 6rem;
+		height: 6rem;
+		object-fit: cover;
+		border-radius: 1000%;
+	}
+	div.DishNew {
+		display: grid;
+		grid-template-columns: 7em auto;
+		align-items: center;
+		}
+	div.DishNew h3 {
+		text-align: left;
+		text-transform: uppercase;
+	}
+	div.DishNew p {
+		margin-bottom: 0;
+	}
+
+/* css cho phan <main class="content5"> */
+
+main.content5 {
+	margin: auto;
+	width: 1100px;
+	background-color: #212121;
+	}
+	main.content5 figure{
+		margin: 0;
+		width: 100%;
+	}
+	main.content5 img {
+		width: 100%;
+	}
+	main.content5 > h3 {
+		font-size: 2.5rem;
+		margin: 1.5rem 0;
+	}
+	section.cont5Child {
+		margin: 0 5%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: center;
+	}
+	section.cont5Child input {
+		width: 100%;
+		height: 1.9rem;
+		border-radius: 4px;
+		background-color: transparent;
+		border: 1px solid whitesmoke;
+		box-shadow: none;
+		margin-bottom: 3rem;
+		outline: none;
+		color: whitesmoke;
+	}
+	div.cont5Info {
+		width: 60%;
+		text-align: left;
+	}
+	section.cont5Child label {
+		position: relative;
+		bottom: 5px;
+		color: white;
+	}
+	::-webkit-input-placeholder {
+		color: white;
+		padding-left: 4px;
+	}
+	::placeholder {
+		padding-left: 4px;
+		color: white;
+	}
+
+
+
+
